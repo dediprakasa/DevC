@@ -1,0 +1,67 @@
+html, body, h1, ul {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer{
+    background-color: rgb(46, 46, 226);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin: 10px 100px 0px 0px;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 10px 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    padding: 10px 20px;
+}
+
+ul {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.container{
+    margin: auto;
+    margin-top: 0px;
+    width: 900px;
+    background: rgb(227, 227, 248);
+}
+
+.inquiries{
+    margin: auto;
+    width: 900px;
+    background: rgb(219, 227, 255);
+}
+
+footer{
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+form {
+    padding: 20px 20px;
+}
+
+input {
+    margin-bottom: 10px;
+}
