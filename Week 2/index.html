@@ -17,30 +17,66 @@
     </div>
 
     <div class="board bg-light py-3 text-center pl-10px mx-auto" style="width: 200px">
-        <div class="panel border border-primary mx-auto rounded-lg" style="width: 190px; height: 50px"></div>
+        <input id="disp" class="txtview border border-primary mx-auto rounded-lg "style="width: 190px; height: 50px">
         <div class="btn-group my-2 btn-block" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">7</button>
-                <button type="button" class="btn btn-secondary">8</button>
-                <button type="button" class="btn btn-secondary">9</button>
-                <button type="button" class="btn btn-secondary">/</button>
-        </div>
-        <div class="btn-group my-2 btn-block role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">4</button>
-                <button type="button" class="btn btn-secondary">5</button>
-                <button type="button" class="btn btn-secondary">6</button>
-                <button type="button" class="btn btn-secondary">X</button>
+                <button type="button" class="btn btn-secondary" onclick= "getElementById('disp').innerHTML = 7">Del</button>
+                <button type="button" class="btn btn-secondary" onclick= "getElementById('disp').innerHTML = 0">C</button>
         </div>
         <div class="btn-group my-2 btn-block" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">1</button>
-                <button type="button" class="btn btn-secondary">2</button>
-                <button type="button" class="btn btn-secondary">3</button>
-                <button type="button" class="btn btn-secondary">-</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + 7;
+                                ">7</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + 8;
+                                ">8</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + 9;
+                                ">9</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + '/';
+                                ">/</button>
         </div>
         <div class="btn-group my-2 btn-block" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">0</button>
-                <button type="button" class="btn btn-secondary">.</button>
-                <button type="button" class="btn btn-secondary">=</button>
-                <button type="button" class="btn btn-secondary">+</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + 4;
+                                ">4</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + 5;
+                                ">5</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + 6;
+                                ">6</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + '*';
+                                ">X</button>
+        </div>
+        <div class="btn-group my-2 btn-block" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + 1;
+                                ">1</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + 2;
+                                ">2</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + 3;
+                                ">3</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + '-';
+                                ">-</button>
+        </div>
+        <div class="btn-group my-2 btn-block" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + 0;
+                                ">0</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + '.';
+                                ">.</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick=" if(getElementById('disp').value) {getElementById('disp').value = eval(getElementById('disp').value)};
+                                ">=</button>
+                <button type="button" class="btn btn-secondary" 
+                        onclick="getElementById('disp').value = getElementById('disp').value + '+';
+                                ">+</button>
         </div>
     </div>
 
@@ -51,5 +87,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
